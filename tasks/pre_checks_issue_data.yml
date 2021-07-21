@@ -80,6 +80,8 @@
 
 - name: Fail the play
   ansible.builtin.fail:
-    msg: "Please include the output of {{ playbook_dir }}/pyratlabs-issue-dump.txt in your bug report."
+    msg: >-
+      Please include the output of
+      {{ playbook_dir }}/pyratlabs-issue-dump.txt in your bug report.
   delegate_to: localhost
   run_once: true
